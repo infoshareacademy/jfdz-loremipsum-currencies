@@ -1,0 +1,37 @@
+.social .icon-social{
+    width: 20px;
+    height: 20px;
+    padding: 2px;
+    border-radius: 50%;
+    float: left;
+    margin: 2px;
+    
+}
+.social .icon-social:hover {
+    background: #ffffff !important;
+}
+.social .icon-social .demo-icon{
+    left: -1px;
+    top: 1px;
+    position: relative;
+}
+
+#facebook{
+    background-color: #3b5998;
+
+}
+#google{
+    background-color: #D34836;
+
+}
+#tweeter{
+    background-color: #4099FF;
+
+}
+#youtube{
+    background-color: #e52d27;
+
+}
+.clear{
+    clear: both;
+}
