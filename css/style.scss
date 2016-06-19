@@ -1,23 +1,15 @@
+@import "reset";
+@import "socialmedia";
+
+.clear {
+  clear: both;
+}
+
 body {
   font-family: Arial, sans-serif;
 }
-.social .icon-social{
-  width: 20px;
-  height: 20px;
-  padding: 2px;
-  border-radius: 50%;
-  float: left;
-  margin: 2px;
 
-}
-.social .icon-social:hover {
-  background: #ffffff !important;
-}
-.social .icon-social .demo-icon{
-  left: -1px;
-  top: 1px;
-  position: relative;
-}
+
 
 /* ========== header ========== */
 .header {
@@ -28,6 +20,7 @@ body {
   background-color: rgba(110,174,98, .6);
   z-index: 1;
 }
+
 .header h1 {
   color: #FFFFFF;
   text-transform: uppercase;
@@ -83,22 +76,4 @@ body {
   text-align: center;
   text-shadow: 2px 2px 5px #000000;
 }
-#facebook{
-  background-color: #3b5998;
 
-}
-#google{
-  background-color: #D34836;
-
-}
-#tweeter{
-  background-color: #4099FF;
-
-}
-#youtube{
-  background-color: #e52d27;
-
-}
-.clear{
-  clear: both;
-}
