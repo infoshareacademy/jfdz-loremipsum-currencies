@@ -4,6 +4,7 @@
 .clear {
   clear: both;
 }
+
 @import "_reset.scss";
 @import "_variable.scss";
 
@@ -13,16 +14,6 @@ body {
 
 @import "_header.scss";
 @import "_banner.scss";
-
-
-.social .icon-social{
-  width: 20px;
-  height: 20px;
-  padding: 2px;
-  border-radius: 50%;
-  float: left;
-  margin: 2px;
-
 
 
 /* ========== header ========== */
@@ -89,15 +80,4 @@ body {
   line-height: 1.7;
   text-align: center;
   text-shadow: 2px 2px 5px #000000;
-}
-#tweeter{
-  background-color: #4099FF;
-
-}
-#youtube{
-  background-color: #e52d27;
-
-}
-.clear{
-  clear: both;
 }
