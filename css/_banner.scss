@@ -1,0 +1,26 @@
+/* ========== banner ========== */
+.banner {
+  position: relative;
+  font-size: 10px;
+
+  img {
+    width: 100%;
+  }
+  h2 {
+    position: absolute;
+    left: 0;
+    right: 0;
+    max-width: 800px;
+    padding: 25px 35px;
+    margin-left: auto;
+    margin-right: auto;
+    bottom: 70px;
+    background-color: rgba(0, 0, 0, .6);
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    line-height: 1.7;
+    text-align: center;
+    text-shadow: 2px 2px 5px #000000;
+  }
+}
