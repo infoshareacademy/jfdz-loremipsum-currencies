@@ -15,12 +15,12 @@
     margin-left: auto;
     margin-right: auto;
     bottom: 70px;
-    background-color: rgba(0, 0, 0, .6);
-    color: #FFFFFF;
+    background-color: rgba($black-color, .6);
+    color: $white-color;
     text-transform: uppercase;
     font-size: 1.4rem;
     line-height: 1.7;
     text-align: center;
-    text-shadow: 2px 2px 5px #000000;
+    text-shadow: 2px 2px 5px $black-color;
   }
 }
