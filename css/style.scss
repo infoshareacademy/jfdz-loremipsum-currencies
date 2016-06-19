@@ -1,15 +1,14 @@
 @import "reset";
+@import "variable";
+
+body {
+  font-family: Arial, sans-serif;
+}
+
 @import "socialmedia";
 
 .clear {
   clear: both;
-}
-
-@import "_reset.scss";
-@import "_variable.scss";
-
-body {
-  font-family: Arial, sans-serif;
 }
 
 @import "_header.scss";
