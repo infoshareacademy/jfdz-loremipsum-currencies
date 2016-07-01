@@ -135,4 +135,5 @@ footer {
   height:60px;		/* Wysokość nagłówka */
   background-color:forestgreen;
   text-align: center;
+  padding: 10px;
 }
