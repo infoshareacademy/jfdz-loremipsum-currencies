@@ -134,6 +134,5 @@ footer {
   width:100%;
   height:60px;		/* Wysokość nagłówka */
   background-color:forestgreen;
-  margin: 10px;
-  border: 3px solid #73AD21;
+  text-align: center;
 }
