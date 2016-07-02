@@ -1,189 +1,63 @@
-@charset "UTF-8";
-/* http://meyerweb.com/eric/tools/css/reset/
-   v2.0 | 20110126
-   License: none (public domain)
+/*
+Syntax error: Invalid CSS after "footer {": expected "}", was "<<<<<<< HEAD"
+        on line 18 of _footer.scss
+        from line 13 of style.scss
+
+13: }
+14: #middle {
+15:   padding:10px;
+16:   padding-bottom:60px;	}/* Wysokość nagłówka *\/
+17: footer {
+18: <<<<<<< HEAD
+19:   position: relative;
+20: =======
+21:   position:fixed;
+22:   bottom:0;
+23: >>>>>>> ccaef3afb1784621c0c4c48f4ad01dd84c788101
+
+Backtrace:
+_footer.scss:18
+style.scss:13
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:1148:in `expected'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:1084:in `expected'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:1079:in `tok!'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:535:in `block'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:528:in `ruleset'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:552:in `block_child'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:542:in `block_contents'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:82:in `stylesheet'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:27:in `parse'
+/usr/lib/ruby/vendor_ruby/sass/engine.rb:342:in `_to_tree'
+/usr/lib/ruby/vendor_ruby/sass/engine.rb:274:in `to_tree'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:225:in `visit_import'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/base.rb:37:in `visit'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:100:in `visit'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/base.rb:53:in `block in visit_children'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/base.rb:53:in `map'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/base.rb:53:in `visit_children'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:109:in `block in visit_children'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:121:in `with_environment'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:108:in `visit_children'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/base.rb:37:in `block in visit'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:128:in `visit_root'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/base.rb:37:in `visit'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:100:in `visit'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:7:in `visit'
+/usr/lib/ruby/vendor_ruby/sass/tree/root_node.rb:20:in `render'
+/usr/lib/ruby/vendor_ruby/sass/engine.rb:315:in `_render'
+/usr/lib/ruby/vendor_ruby/sass/engine.rb:262:in `render'
+/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:362:in `update_stylesheet'
+/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:203:in `block in update_stylesheets'
+/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:201:in `each'
+/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:201:in `update_stylesheets'
+/usr/lib/ruby/vendor_ruby/sass/plugin.rb:81:in `update_stylesheets'
+/usr/lib/ruby/vendor_ruby/sass/exec.rb:439:in `watch_or_update'
+/usr/lib/ruby/vendor_ruby/sass/exec.rb:326:in `process_result'
+/usr/lib/ruby/vendor_ruby/sass/exec.rb:41:in `parse'
+/usr/lib/ruby/vendor_ruby/sass/exec.rb:21:in `parse!'
+/usr/bin/scss:8:in `<main>'
 */
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, menu, nav, output, ruby, section, summary, time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline; }
-
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, footer, header, menu, nav, section {
-  display: block; }
-
-body {
-  line-height: 1; }
-
-ol, ul {
-  list-style: none; }
-
-blockquote, q {
-  quotes: none; }
-
-blockquote,
-blockquote::before,
-blockquote::after {
-  content: '';
-  content: none; }
-
-q,
-q::before,
-q::after {
-  content: '';
-  content: none; }
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0; }
-
-body {
-  font-family: Arial, sans-serif; }
-
-.social .icon-social {
-  width: 20px;
-  height: 20px;
-  padding: 2px;
-  border-radius: 50%;
-  float: left;
-  margin: 2px;
-  transition: background-color 1s linear 0.2s; }
-.social .icon-social:hover {
-  background: #fff;
-  cursor: pointer; }
-.social .icon-social:before {
-  left: -1px;
-  top: 1px;
-  position: relative; }
-.social .icon-social-facebook {
-  background-color: #3b5998; }
-.social .icon-social-google {
-  background-color: #D34836; }
-.social .icon-social-tweeter {
-  background-color: #4099FF; }
-.social .icon-social-youtube {
-  background-color: #e52d27; }
-
-.clear {
-  clear: both; }
-
-/* ========== header ========== */
-.header {
-  position: fixed;
-  font-size: 10px;
-  width: 100%;
-  height: 60px;
-  background-color: rgba(110, 174, 98, 0.6);
-  z-index: 1; }
-  .header h1 {
-    color: white;
-    text-transform: uppercase;
-    text-align: center;
-    font-size: 1.5rem;
-    line-height: 60px; }
-
-/* ========== header - btn menu ========== */
-.header__btn-nav {
-  position: absolute;
-  width: 112px;
-  height: 60px;
-  background-color: transparent;
-  border: 0;
-  border-right: 2px solid white;
-  cursor: pointer;
-  transition: background-color .5s linear; }
-  .header__btn-nav:hover {
-    background-color: #6eae62; }
-  .header__btn-nav span {
-    width: 60px;
-    height: 4px;
-    display: block;
-    margin: 5px auto 10px;
-    background-color: white; }
-
-/* ========== banner ========== */
-.banner {
-  position: relative;
-  font-size: 10px; }
-  .banner img {
-    width: 100%; }
-  .banner h2 {
-    position: absolute;
-    left: 0;
-    right: 0;
-    max-width: 800px;
-    padding: 25px 35px;
-    margin-left: auto;
-    margin-right: auto;
-    bottom: 70px;
-    background-color: rgba(0, 0, 0, 0.6);
-    color: white;
-    text-transform: uppercase;
-    font-size: 1.4rem;
-    line-height: 1.7;
-    text-align: center;
-    text-shadow: 2px 2px 5px black; }
-
-                      	 /*html, body {
-  margin:0;
-  padding:0;
-  height:100%;
-}
-#container {
-  min-height:100%;
-  position:relative;
-}
-header {
-  background:#fbb5b8;
-  padding:10px;
-}
-#middle {
-  padding:10px;
-  padding-bottom:60px;	}/* Wysokość nagłówka */
-footer {
-  position: relative;
-  width: 100%;
-  height: 10px;
-  background-color: #6EAE62;
-  text-align: center;
-  padding: 10px; }
-
-nav {
-  background-color: rgba(36, 158, 27, 0.8);
-  width: 300px;
-  height: 100%;
-  position: absolute;
-  z-index: 100;
-  display: none; }
-  nav.show {
-    display: block; }
-
-.button {
-  position: relative;
-  text-align: right;
-  font-size: 50px;
-  color: white;
-  transition: color 0.5s linear 0.05s;
-  text-decoration: none;
-  position: absolute;
-  top: 15px;
-  right: 15px; }
-
-.button:hover {
-  cursor: pointer;
-  color: black; }
-
-ul > li {
-  color: #ffffff;
-  font-family: "DejaVu Sans";
-  font-size: 20px;
-  text-align: center;
-  padding: 2px;
-  margin-top: 50px; }
-
-a {
-  text-decoration: none;
-  color: white; }
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: Invalid CSS after \"footer {\": expected \"}\", was \"<<<<<<< HEAD\"\A         on line 18 of _footer.scss\A         from line 13 of style.scss\A \A 13: }\A 14: #middle {\A 15:   padding:10px;\A 16:   padding-bottom:60px;	}/* Wysokość nagłówka */\A 17: footer {\A 18: <<<<<<< HEAD\A 19:   position: relative;\A 20: =======\A 21:   position:fixed;\A 22:   bottom:0;\A 23: >>>>>>> ccaef3afb1784621c0c4c48f4ad01dd84c788101"; }
