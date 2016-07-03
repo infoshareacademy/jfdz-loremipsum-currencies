@@ -229,6 +229,10 @@ nav {
     margin-top: 50px; }
     nav ul > li a {
       color: #FFFFFF;
-      text-transform: uppercase; }
+      text-transform: uppercase;
+      text-decoration: none;
+      text-shadow: 1px 1px 5px #194a0f; }
+      nav ul > li a:hover {
+        border-bottom: 2px solid #FFFFFF; }
 
 /*# sourceMappingURL=style.css.map */

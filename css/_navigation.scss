@@ -34,6 +34,11 @@ nav {
       a {
         color: $white-color;
         text-transform: uppercase;
+        text-decoration: none;
+        text-shadow: 1px 1px 5px #194a0f;
+        &:hover {
+          border-bottom: 2px solid $white-color;
+        }
       }
     }
   }
