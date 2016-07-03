@@ -1,0 +1,13 @@
+nav {
+  background-color: rgba($black-color, 0.8);
+  .button {
+    &:hover {
+      color: $yellow-color;
+    }
+  }
+  a {
+    &:hover {
+      color: $yellow-color;
+    }
+  }
+}
