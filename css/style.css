@@ -202,7 +202,7 @@ nav {
   background-color: rgba(36, 158, 27, 0.8);
   width: 300px;
   height: 100%;
-  position: absolute;
+  position: fixed;
   z-index: 100;
   left: -300px;
   transition: left 1s; }
@@ -229,6 +229,10 @@ nav {
     margin-top: 50px; }
     nav ul > li a {
       color: #FFFFFF;
-      text-transform: uppercase; }
+      text-transform: uppercase;
+      text-decoration: none;
+      text-shadow: 1px 1px 5px #194a0f; }
+      nav ul > li a:hover {
+        text-decoration: underline; }
 
 /*# sourceMappingURL=style.css.map */
