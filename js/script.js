@@ -9,8 +9,7 @@
     function showNavigation() {
         mainNav.classList.add('show');
     }
-
-
+    
     var closeMainNav = document.querySelector('.close-main-navigation');
     closeMainNav.addEventListener('click', closeNavigation, false);
 
