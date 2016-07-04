@@ -1,10 +1,10 @@
 nav {
   background-color: rgba(36, 158, 27, 0.8);
-  width: 300px;
+  width: 30rem;
   height: 100%;
   position: fixed;
   z-index: 100;
-  left: -300px;
+  left: -30rem;
   transition: left 1s;
   &.show {
     left: 0;
@@ -27,7 +27,7 @@ nav {
   ul {
     > li {
       font-family: "DejaVu Sans";
-      font-size: 20px;
+      font-size: 2rem;
       text-align: center;
       padding: 2px;
       margin-top: 50px;

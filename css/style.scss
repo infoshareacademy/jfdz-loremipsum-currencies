@@ -1,8 +1,22 @@
 @import "reset";
 @import "variable";
+
+html {
+  font-size: 10px;
+}
+
 body {
   font-family: Arial, sans-serif;
 }
+
+html.small {
+  font-size: 7px;
+}
+
+html.large {
+  font-size: 13px;
+}
+
 @import "onas";
 @import "socialmedia";
 

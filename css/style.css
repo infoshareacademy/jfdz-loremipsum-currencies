@@ -45,8 +45,17 @@ table {
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
+html {
+  font-size: 10px; }
+
 body {
   font-family: Arial, sans-serif; }
+
+html.small {
+  font-size: 7px; }
+
+html.large {
+  font-size: 13px; }
 
 .onas {
   margin: auto;
@@ -105,6 +114,49 @@ body {
     text-align: center;
     font-size: 1.5rem;
     line-height: 60px; }
+  .header .nav-invalid {
+    position: absolute;
+    right: 0;
+    top: 0; }
+    .header .nav-invalid li {
+      display: inline-block; }
+
+.nav-invalid .btn-change-contrast {
+  display: block;
+  border: 0;
+  height: 60px;
+  background-color: #FFFFFF;
+  padding: 0 15px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-left: 2px solid #FFFFFF;
+  transition: all .3s linear;
+  font-size: 1.3rem; }
+  .nav-invalid .btn-change-contrast:hover {
+    background-color: #6EAE62;
+    color: #FFFFFF; }
+.nav-invalid .btn-font-size {
+  display: inline-block;
+  border: 1px solid #FFFFFF;
+  background-color: transparent;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  margin-right: 10px;
+  color: #FFFFFF;
+  cursor: pointer;
+  transition: all .5s;
+  vertical-align: middle; }
+  .nav-invalid .btn-font-size:hover, .nav-invalid .btn-font-size.active {
+    background-color: #FFFFFF;
+    color: #000000; }
+  .nav-invalid .btn-font-size.small {
+    font-size: 8px; }
+  .nav-invalid .btn-font-size.medium {
+    font-size: 12px; }
+  .nav-invalid .btn-font-size.large {
+    font-size: 16px; }
 
 /* ========== header - btn menu ========== */
 .header__btn-nav {
@@ -143,7 +195,7 @@ body {
     background-color: rgba(0, 0, 0, 0.6);
     color: #FFFFFF;
     text-transform: uppercase;
-    font-size: 1.4rem;
+    font-size: 2rem;
     line-height: 1.7;
     text-align: center;
     text-shadow: 2px 2px 5px #000000; }
@@ -163,7 +215,7 @@ header {
 }
 #middle {
   padding:10px;
-  padding-bottom:60px;	}/* Wysokość nagłówka */
+  padding-bottom:60px;	}/* Wysoko┼Ť─ç nag┼é├│wka */
 footer {
   position: relative;
   width: 100%;
@@ -200,11 +252,11 @@ span.fixed {
 
 nav {
   background-color: rgba(36, 158, 27, 0.8);
-  width: 300px;
+  width: 30rem;
   height: 100%;
   position: fixed;
   z-index: 100;
-  left: -300px;
+  left: -30rem;
   transition: left 1s; }
   nav.show {
     left: 0; }
@@ -223,7 +275,7 @@ nav {
       color: #000000; }
   nav ul > li {
     font-family: "DejaVu Sans";
-    font-size: 20px;
+    font-size: 2rem;
     text-align: center;
     padding: 2px;
     margin-top: 50px; }
