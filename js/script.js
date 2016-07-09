@@ -3,10 +3,12 @@
     // ============ navigation main ================
     var mainNav = document.querySelector('.main-navigation');
 
-    function closeNavigation() {
+    function closeNavigation(ev) {
+        ev.preventDefault();
         mainNav.classList.remove('show');
     }
-    function showNavigation() {
+    function showNavigation(ev) {
+        ev.preventDefault();
         mainNav.classList.add('show');
     }
     var closeMainNav = document.querySelector('.close-main-navigation');
@@ -24,6 +26,7 @@
 
     var headEl = document.querySelector('head');
     function switchStyle(ev) {
+        ev.preventDefault();
         ev.target.classList.toggle('show-contrast');
         if(ev.target.classList.contains('show-contrast')) {
             headEl.appendChild(linkContrast);
@@ -43,6 +46,7 @@
     var linkFontSizeLength = linkFontSize.length;
 
     function changeFontSize(ev) {
+        ev.preventDefault();
         for(var i = 0; i < linkFontSizeLength; i++) {
             linkFontSize[i].classList.remove('active');
             ev.target.classList.add('active');

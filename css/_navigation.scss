@@ -1,43 +1,48 @@
 nav {
-  background-color: rgba(36, 158, 27, 0.8);
+  background-color: rgba($grey-color, 0.9);
   width: 30rem;
   height: 100%;
   position: fixed;
   z-index: 100;
   left: -30rem;
   transition: left 1s;
+  box-shadow: 0 0 5px $black-color;
   &.show {
     left: 0;
   }
   .button {
     position: relative;
     text-align: right;
-    font-size: 50px;
+    font-size: 5rem;
     color: $white-color;
     transition: color 0.5s linear 0.05s;
     text-decoration: none;
     position: absolute;
-    top: 15px;
+    top: 4px;
     right: 15px;
     &:hover {
       cursor: pointer;
-      color: $black-color;
+      color: $green-color;
     }
   }
   ul {
+    margin-top: 6rem;
     > li {
-      font-family: "DejaVu Sans";
       font-size: 2rem;
       text-align: center;
-      padding: 2px;
-      margin-top: 50px;
+      &:first-child {
+        border-top: 1px solid $white-color;
+      }
       a {
         color: $white-color;
         text-transform: uppercase;
         text-decoration: none;
-        text-shadow: 1px 1px 5px #194a0f;
+        border-bottom: 1px solid $white-color;
+        display: block;
+        padding: 2rem 0;
+        transition: background-color .4s ease-out;
         &:hover {
-          text-decoration: underline;
+          background-color: rgba($green-color, .6);
         }
       }
     }

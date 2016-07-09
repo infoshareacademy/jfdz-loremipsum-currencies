@@ -25,7 +25,7 @@
     &.active {
       background-color: $yellow-color;
       color: $black-color;
-      border: 1px solid red;
+      border: 1px solid $black-color;
     }
   }
 }

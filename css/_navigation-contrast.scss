@@ -5,9 +5,14 @@ nav {
       color: $yellow-color;
     }
   }
-  a {
-    &:hover {
-      color: $yellow-color;
+  ul {
+    li {
+      a {
+        &:hover {
+          background-color: $yellow-color;
+          color: $black-color;
+        }
+      }
     }
   }
 }
