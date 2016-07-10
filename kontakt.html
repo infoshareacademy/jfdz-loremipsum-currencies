@@ -8,6 +8,18 @@
     <link rel="shortcut icon" href="images/favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <style>form{
+    /*max-width:500px;*/
+    margin: auto;
+    position: absolute;
+    top: 200px;
+    left: 400px;
+    max-width: 200px;
+    height: 100px;
+    }
+    body {
+        background: url("images/pexels-photo.jpg");}
+</style>
 </head>
 <body>
 <!-- navigation -->
@@ -42,6 +54,21 @@
     </ul>
 </header>
 
+
+        <form method="get">
+            <ul><li> Podaj adres e-mail:<br>
+                <input type="email" name="Adres e-mail:"></li>
+                <li> Twoje imię i nazwisko <br>
+                    <input type="text" id="name" name="name" ></li>
+                <li><div class="icon">Wiadomość<br>
+                    <textarea  name="mes-textarea" id="mes-textarea" required></textarea>
+                </div></li>
+                <li><div><input type="submit" value="Wyślij"></div></li>
+            </ul>
+        </form>
+    </div>
+
+</div>
 <footer>
     <ul class="social">
         <li><a href="https://www.facebook.com" target="_blank"><i class="icon-social icon-facebook-squared"></i></a></li>
@@ -55,3 +82,4 @@
 <script src="js/script.js"></script>
 </body>
 </html>
+
