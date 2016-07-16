@@ -31,7 +31,7 @@ html.large {
 .text-page {
   font-size: 1.4rem;
   max-width: 1200px;
-  margin: 2rem auto;
+  margin: 0 auto;
   h2 {
     font-size: 3rem;
     margin: 2rem 0;
@@ -53,6 +53,9 @@ html.large {
   }
   ol {
     list-style-type: decimal;
+  }
+  &.text-other-page {
+    padding-top: 60px;
   }
 }
 
