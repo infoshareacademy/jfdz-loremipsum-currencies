@@ -6,19 +6,22 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css2/fontello.css">
     <link rel="shortcut icon" href="images/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 <body>
+<!-- navigation -->
 <nav class="main-navigation">
     <a class="button close-main-navigation" href="#">&times;</a>
-    <!--<div class="button" type="button">X</div>-->
     <ul>
-        <li><a href="strona-glowna.html"></a></li>
-        <li><a href="onas.html"></a></li>
-        <li><a href="funkcje.html"></a></li>
-        <li><a href="kontakt.html"></a></li>
-        <li><a href="mapa.html"></a></li>
+        <li><a href="index.html">STRONA GŁÓWNA</a></li>
+        <li><a href="onas.html">O NAS</a></li>
+        <li><a href="funkcje.html">FUNKCJE</a></li>
+        <li><a href="kontakt.html">KONTAKT</a></li>
+        <li><a href="mapa.html">MAPA STRONY</a></li>
     </ul>
 </nav>
+
 <!-- header -->
 <header class="header">
     <button type="button" class="header__btn-nav">
@@ -26,45 +29,56 @@
         <span></span>
         <span></span>
     </button>
-    <h1>O nas</h1>
+    <h1>Monitor Kursów Walut</h1>
+    <ul class="nav-invalid">
+        <li>
+            <button type="button" class="btn-font-size small">A</button>
+            <button type="button" class="btn-font-size medium active">A</button>
+            <button type="button" class="btn-font-size large">A</button>
+        </li>
+        <li>
+            <button type="button" class="btn-change-contrast">Zmień kontrast</button>
+        </li>
+    </ul>
 </header>
 <main>
-<!-- banner -->
-    <figure class="banner">
-        <img src="images/pexels-photo.jpg" alt="Kursy Walut">
+    <!-- banner -->
+    <figure class="banner" style="background-image: url('images/black-and-white-people-bar-men.jpg');">
         <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad consequatur expedita inventore saepe sint
             voluptates.</h2>
     </figure>
 
-<div class="onas">
-<article class="onas-art">
-    <img src="images/Mateusz.jpg" class="onas-img"><br>
-    To jest Mateusz!
-</article>
-<article class="onas-art">
-    <img src="images/Marcin.jpg" class="onas-img"><br>
-    To jest Marcin!
-</article>
-<article class="onas-art">
-    <img src="images/index.jpeg" class="onas-img"><br>
-    To jest Iza!
-</article>
-<article class="onas-art">
-    <img src="images/ja.jpeg" class="onas-img"><br>
-    To jest Tomek!
-</article>
-</div>
+    <div class="onas">
+        <article class="onas-art">
+            <img src="images/Mateusz.jpg" class="onas-img"><br>
+            To jest Mateusz!
+        </article>
+        <article class="onas-art">
+            <img src="images/Marcin.jpg" class="onas-img"><br>
+            To jest Marcin!
+        </article>
+        <article class="onas-art">
+            <img src="images/index.jpeg" class="onas-img"><br>
+            To jest Iza!
+        </article>
+        <article class="onas-art">
+            <img src="images/ja.jpeg" class="onas-img"><br>
+            To jest Tomek!
+        </article>
+    </div>
 
-
-<div class="social">
-    <div class="icon-social icon-social-facebook icon-facebook-squared"></div>
-    <div class="icon-social icon-social-google icon-gplus-squared"></div>
-    <div class="icon-social icon-social-tweeter icon-twitter"></div>
-    <div class="icon-social icon-social-youtube icon-youtube-play"></div>
-    <div class="clear"></div>
-</div>
 </main>
-<footer> &#169;2016 Lorem Ipsum</footer>
+
+
+<footer>
+    <ul class="social">
+        <li><a href="https://www.facebook.com" target="_blank")><i class="icon-social icon-facebook-squared"></i></a></li>
+        <li><a href="https://plus.google.com/" target="_blank"><i class="icon-social icon-gplus-squared"></i></a></li>
+        <li> <a href="https://www.twitter.com" target="_blank"><i class="icon-social icon-twitter"></i></a></li>
+        <li><a href="https://www.youtube.com" target="_blank"><i class="icon-social icon-youtube-play"></i></a></li>
+    </ul>
+    <p>Monitor Kursów Walut &#169; 2016</p>
+</footer>
 
 <script src="js/script.js"></script>
 </body>
