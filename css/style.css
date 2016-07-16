@@ -143,6 +143,11 @@ html.large {
     .header .nav-invalid li {
       display: inline-block; }
 
+.nav-invalid li {
+  vertical-align: top;
+  margin-top: 0; }
+  .nav-invalid li:first-child {
+    margin-top: 10px; }
 .nav-invalid .btn-change-contrast {
   display: block;
   border: 0;
@@ -168,10 +173,7 @@ html.large {
   margin-right: 10px;
   color: #FFFFFF;
   cursor: pointer;
-  transition: all .5s;
-  vertical-align: middle;
-  vertical-align: top;
-  margin-top: 0; }
+  transition: all .5s; }
   .nav-invalid .btn-font-size:hover, .nav-invalid .btn-font-size.active {
     background-color: #FFFFFF;
     color: #000000; }
