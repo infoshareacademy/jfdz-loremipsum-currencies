@@ -102,7 +102,7 @@ html.large {
   .social li {
     display: inline-block; }
     .social li a {
-      text-align: right;
+      text-align: center;
       line-height: 4.5rem;
       display: block;
       width: 5rem;
