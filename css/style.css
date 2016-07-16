@@ -171,7 +171,7 @@ html.large {
   transition: all .5s;
   vertical-align: middle;
   vertical-align: top;
-  margin-top: 15px; }
+  margin-top: 0; }
   .nav-invalid .btn-font-size:hover, .nav-invalid .btn-font-size.active {
     background-color: #FFFFFF;
     color: #000000; }
