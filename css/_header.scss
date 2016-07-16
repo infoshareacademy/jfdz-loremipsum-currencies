@@ -54,6 +54,8 @@
     cursor: pointer;
     transition: all .5s;
     vertical-align: middle;
+    vertical-align: top;
+    margin-top: 15px;
     &:hover,
     &.active {
       background-color: $white-color;
