@@ -1,0 +1,18 @@
+nav {
+  background-color: rgba($black-color, 0.8);
+  .button {
+    &:hover {
+      color: $yellow-color;
+    }
+  }
+  ul {
+    li {
+      a {
+        &:hover {
+          background-color: $yellow-color;
+          color: $black-color;
+        }
+      }
+    }
+  }
+}

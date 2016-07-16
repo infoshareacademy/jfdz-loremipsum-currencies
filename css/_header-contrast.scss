@@ -1,0 +1,33 @@
+/* ========== header ========== */
+.header {
+  background-color: $black-color;
+}
+
+.header__btn-nav {
+  &:hover {
+    border-color: $yellow-color;
+    background-color: $yellow-color;
+    span {
+      background-color: $black-color;
+    }
+  }
+}
+
+.nav-invalid {
+  .btn-change-contrast {
+    &:hover {
+      background-color: $yellow-color;
+      color: $black-color;
+    }
+  }
+  .btn-font-size {
+    &:hover,
+    &.active {
+      background-color: $yellow-color;
+      color: $black-color;
+      border: 1px solid $black-color;
+    }
+  }
+}
+
+

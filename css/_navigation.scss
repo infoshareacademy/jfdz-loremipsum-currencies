@@ -1,23 +1,50 @@
-nav{
-  background-color: rgba(64,153,255,0.8);
-  width: 100%;
+nav {
+  background-color: rgba($grey-color, 0.9);
+  width: 30rem;
   height: 100%;
-  position: absolute;
+  position: fixed;
   z-index: 100;
-
-}
-.button{
-  position: relative;
-  text-align: right;
-  font-size: 50px;
-  color: white;
-  transition: color 0.5s linear 0.05s;
-  text-decoration: none;
-  position: absolute;
-  top: 20px; right: 20px;
-
-}
-.button:hover{
-  cursor: pointer;
-  color: black;
+  left: -30rem;
+  transition: left 1s;
+  box-shadow: 0 0 5px $black-color;
+  &.show {
+    left: 0;
+  }
+  .button {
+    position: relative;
+    text-align: right;
+    font-size: 5rem;
+    color: $white-color;
+    transition: color 0.5s linear 0.05s;
+    text-decoration: none;
+    position: absolute;
+    top: 4px;
+    right: 15px;
+    &:hover {
+      cursor: pointer;
+      color: $green-color;
+    }
+  }
+  ul {
+    margin-top: 6rem;
+    > li {
+      font-size: 2rem;
+      text-align: center;
+      &:first-child {
+        border-top: 1px solid $white-color;
+      }
+      a {
+        color: $white-color;
+        text-transform: uppercase;
+        text-decoration: none;
+        border-bottom: 1px solid $white-color;
+        display: block;
+        padding: 2rem 0;
+        transition: background-color .4s ease-out;
+        &:hover {
+          background-color: rgba($green-color, .6);
+        }
+      }
+    }
+  }
 }
