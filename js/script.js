@@ -29,7 +29,6 @@ $(document).ready(function() {
 
         var button = $(this);
         button.toggleClass('show-contrast');
-        git
         if(button.hasClass('show-contrast')) {
             $('head').append($linkContrast);
         } else {
