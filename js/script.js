@@ -1,4 +1,4 @@
-(function() {
+$(document).ready(function() {
 
     // ============ navigation main ================
     var mainNav = document.querySelector('.main-navigation');
@@ -19,26 +19,24 @@
 
 
     // ============ css contrast ================
-    var linkContrast = document.createElement('link');
-    linkContrast.setAttribute('rel', 'stylesheet');
-    linkContrast.setAttribute('href', 'css/contrast.css');
-    linkContrast.setAttribute('id', 'contrast-style');
+    var $linkContrast = $('<link>');
+        $linkContrast
+            .attr('rel', 'stylesheet')
+            .attr('href', 'css/contrast.css')
+            .attr('id', 'contrast-style');
 
-    var headEl = document.querySelector('head');
-    function switchStyle(ev) {
+    $('.btn-change-contrast').on('click', function(ev) {
         ev.preventDefault();
-        ev.target.classList.toggle('show-contrast');
-        if(ev.target.classList.contains('show-contrast')) {
-            headEl.appendChild(linkContrast);
+
+        var button = $(this);
+        button.toggleClass('show-contrast');
+        git
+        if(button.hasClass('show-contrast')) {
+            $('head').append($linkContrast);
         } else {
-            var contrastStyle = document.querySelector('#contrast-style');
-            contrastStyle.remove();
+            $linkContrast.remove();
         }
-    }
-
-    var btnChangeContrast = document.querySelector('.btn-change-contrast');
-
-    btnChangeContrast.addEventListener('click', switchStyle);
+    });
 
 
     // ================== css font size =================
@@ -67,6 +65,6 @@
         linkFontSize[i].addEventListener('click', changeFontSize);
     }
 
-})();
+});
 
 
