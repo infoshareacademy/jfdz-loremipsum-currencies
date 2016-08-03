@@ -17,7 +17,6 @@ $(document).ready(function() {
     var btnShowNav = document.querySelector('.header__btn-nav');
     btnShowNav.addEventListener('click', showNavigation);
 
-
     // ============ css contrast ================
     var $linkContrast = $('<link>');
         $linkContrast
@@ -37,7 +36,6 @@ $(document).ready(function() {
             $linkContrast.remove();
         }
     });
-
 
     // ================== css font size =================
     var linkFontSize = document.querySelectorAll('.btn-font-size');
