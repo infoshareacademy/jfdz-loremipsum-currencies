@@ -1,4 +1,4 @@
 .idea
-*.css
-*.map
+css/*.css
+css/*.map
 !contrast.css
