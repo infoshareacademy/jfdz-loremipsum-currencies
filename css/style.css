@@ -2263,50 +2263,54 @@ textarea:focus {
   font-size: 10px;
   width: 100%;
   height: 100px;
-  background-color: rgba(52, 221, 221, 0.9);
+  background-color: rgba(55, 184, 235, 0.8);
   z-index: 1; }
   .header h1 {
     color: #FFFFFF;
     text-transform: uppercase;
     text-align: center;
-    font-size: 1.5rem;
-    line-height: 100px;
-    text-shadow: 1px 1px 1px #3B3B3B; }
+    font-family: "Bree Serif", serif;
+    font-size: 3.3rem;
+    text-shadow: 1px 1px 1px rgba(59, 59, 59, 0.3);
+    margin-top: 10px; }
+    .header h1 img {
+      vertical-align: middle;
+      width: 100px;
+      margin-right: 10px;
+      margin-top: -8px; }
   .header .nav-invalid {
     position: absolute;
-    right: 0;
+    right: 30px;
     top: 0; }
     .header .nav-invalid li {
       display: inline-block; }
 
 .nav-invalid li {
   vertical-align: top;
-  margin-top: 0; }
-  .nav-invalid li:first-child {
-    margin-top: 5px; }
-  .nav-invalid li.contrast {
-    margin-top: 8px;
-    display: block; }
+  margin-top: 24px; }
 .nav-invalid .btn-change-contrast {
   display: block;
   border: 0;
-  height: 42px;
+  height: 45px;
   background-color: #FFFFFF;
+  color: #1473b4;
   padding: 0 15px;
   cursor: pointer;
   text-transform: uppercase;
   font-weight: bold;
   transition: all .3s linear;
-  font-size: 1.2rem; }
+  font-size: 1.2rem;
+  border: 1px solid transparent; }
   .nav-invalid .btn-change-contrast:hover {
-    background-color: #34DDDD;
-    color: #FFFFFF; }
+    background-color: #1473b4;
+    color: #FFFFFF;
+    border: 1px solid #FFFFFF; }
 .nav-invalid .btn-font-size {
   display: inline-block;
   border: 1px solid #FFFFFF;
   background-color: transparent;
-  width: 38px;
-  height: 38px;
+  width: 45px;
+  height: 45px;
   text-align: center;
   margin-right: 10px;
   color: #FFFFFF;
@@ -2334,7 +2338,7 @@ textarea:focus {
   cursor: pointer;
   transition: background-color .5s linear; }
   .header__btn-nav:hover {
-    background-color: #34DDDD; }
+    background-color: #1473b4; }
   .header__btn-nav span {
     width: 60px;
     height: 4px;
@@ -2454,7 +2458,7 @@ nav {
     right: 15px; }
     nav .button:hover {
       cursor: pointer;
-      color: #34DDDD; }
+      color: #37b8eb; }
   nav ul {
     margin-top: 6rem; }
     nav ul > li {
@@ -2471,6 +2475,7 @@ nav {
         padding: 2rem 0;
         transition: background-color .4s ease-out; }
         nav ul > li a:hover {
-          background-color: rgba(52, 221, 221, 0.6); }
+          background-color: rgba(55, 184, 235, 0.8);
+          color: #FFFFFF; }
 
 /*# sourceMappingURL=style.css.map */

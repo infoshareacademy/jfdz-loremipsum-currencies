@@ -22,7 +22,7 @@ nav {
     right: 15px;
     &:hover {
       cursor: pointer;
-      color: $green-color;
+      color: $blue-color;
     }
   }
   ul {
@@ -42,7 +42,8 @@ nav {
         padding: 2rem 0;
         transition: background-color .4s ease-out;
         &:hover {
-          background-color: rgba($green-color, .6);
+          background-color: rgba($blue-color, .8);
+          color: $white-color;
         }
       }
     }
