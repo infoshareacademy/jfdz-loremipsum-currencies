@@ -2286,15 +2286,8 @@ textarea:focus {
       display: inline-block; }
 
 .nav-invalid li {
-<<<<<<< HEAD
-  vertical-aligngit: top;
-  margin-top: 0; }
-  .nav-invalid li:first-child {
-    margin-top: 10px; }
-=======
   vertical-align: top;
   margin-top: 24px; }
->>>>>>> 537877c41f9b653a6d26fff730dbb24e332911a3
 .nav-invalid .btn-change-contrast {
   display: block;
   border: 0;
