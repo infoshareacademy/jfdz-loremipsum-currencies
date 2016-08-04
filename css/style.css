@@ -2280,7 +2280,7 @@ textarea:focus {
       display: inline-block; }
 
 .nav-invalid li {
-  vertical-align: top;
+  vertical-aligngit: top;
   margin-top: 0; }
   .nav-invalid li:first-child {
     margin-top: 10px; }
@@ -2380,7 +2380,7 @@ header {
 }
 #middle {
   padding:10px;
-  padding-bottom:60px;	}/* Wysokość nagłówka */
+  padding-bottom:60px;	}/* Wysoko┼Ť─ç nag┼é├│wka */
 footer {
   width: 100%;
   background-color: #3B3B3B;
