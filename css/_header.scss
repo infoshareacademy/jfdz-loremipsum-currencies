@@ -5,7 +5,9 @@
   width: 100%;
   height: 100px;
   background-color: rgba($blue-color, .8);
+  box-shadow: 0 0 10px rgba($blue-dark-color, 1);
   z-index: 1;
+  transition: height 1s;
 
   h1 {
     color: $white-color;
@@ -15,12 +17,14 @@
     font-size: 3.3rem;
     text-shadow: 1px 1px 1px rgba($grey-color, .3);
     margin-top: 10px;
+    transition: font-size 1s;
 
     img {
       vertical-align: middle;
       width: 100px;
       margin-right: 10px;
       margin-top: -8px;
+      transition: width 1s;
     }
   }
 
@@ -33,21 +37,26 @@
       display: inline-block;
     }
   }
+
+
+  &.header-min {
+    height: 60px;
+
+    h1 {
+      font-size: 2.2rem;
+    }
+
+    img {
+      width: 60px;
+    }
+  }
 }
 
 .nav-invalid {
   li {
     vertical-align: top;
     margin-top: 24px;
-
-    //&:first-child {
-    //  margin-top: 5px;
-    //}
-    //
-    //&.contrast {
-    //  margin-top: 8px;
-    //  display: block;
-    //}
+    transition: margin-top 1s;
   }
 
   .btn-change-contrast {
@@ -105,6 +114,25 @@
   }
 }
 
+.header-min {
+
+  .nav-invalid {
+
+    .btn-change-contrast {
+      height: 35px;
+    }
+
+     li {
+       margin-top: 12px;
+     }
+
+    .btn-font-size {
+      width: 35px;
+      height: 35px;
+    }
+  }
+}
+
 /* ========== header - btn menu ========== */
 .header__btn-nav {
   position: absolute;
@@ -114,7 +142,7 @@
   border: 0;
   border-right: 2px solid $white-color;
   cursor: pointer;
-  transition: background-color .5s linear;
+  transition: background-color .5s linear, height .6s linear;
 
   &:hover {
     background-color: $blue-dark-color;
@@ -129,4 +157,10 @@
   }
 }
 
+.header-min {
+
+  .header__btn-nav {
+    height: 60px;
+  }
+}
 

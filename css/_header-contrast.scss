@@ -1,6 +1,7 @@
 /* ========== header ========== */
 .header {
   background-color: $black-color;
+  box-shadow: 0 0 10px rgba($black-color, .6);
 }
 
 .header__btn-nav {
@@ -29,5 +30,3 @@
     }
   }
 }
-
-
