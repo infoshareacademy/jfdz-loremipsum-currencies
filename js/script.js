@@ -17,12 +17,13 @@ $(document).ready(function() {
     var btnShowNav = document.querySelector('.header__btn-nav');
     btnShowNav.addEventListener('click', showNavigation);
 
-    // ============ css contrast ================
+
+    // ============ contrast page ================
     var $linkContrast = $('<link>');
-        $linkContrast
-            .attr('rel', 'stylesheet')
-            .attr('href', 'css/contrast.css')
-            .attr('id', 'contrast-style');
+    $linkContrast
+        .attr('rel', 'stylesheet')
+        .attr('href', 'css/contrast.css')
+        .attr('id', 'contrast-style');
 
     $('.btn-change-contrast').on('click', function(ev) {
         ev.preventDefault();
@@ -34,16 +35,41 @@ $(document).ready(function() {
         } else {
             $linkContrast.remove();
         }
-    });
+    });// == /contrast page
 
 
     // ============ responsive scroll menu ================
     var $header = $('.header');
     var $headerHeight = $header.height();
+
     $(window).on('scroll', function() {
-        var headerMin = ( $(document).scrollTop() > $headerHeight ) ? $header.addClass('header-min') : $header.removeClass('header-min');
+        var $pageTop = $(document).scrollTop();
+        var headerMin = ( $pageTop > $headerHeight ) ? $header.addClass('header-min') : $header.removeClass('header-min');
         return headerMin;
+    }); // == /responsive scroll menu
+
+
+    // ============ button back to top ================
+    var $btnBackToTop = $('.btn-back-to-top');
+    var $viewportHeight = $(window).height() - 300;
+
+    var buttonShowHide = function() {
+        var $pageTop = $(document).scrollTop();
+        return ( $pageTop > $viewportHeight ) ? $btnBackToTop.fadeIn() : $btnBackToTop.fadeOut()
+    }
+
+    buttonShowHide();
+    $(window).on('scroll', function() {
+        buttonShowHide();
     });
+
+    $btnBackToTop.on('click', function() {
+       $('body').animate({
+           scrollTop: 0
+       }, 800);
+    });// == /button back to top
+
+
 
     // ================== css font size =================
     var linkFontSize = document.querySelectorAll('.btn-font-size');
