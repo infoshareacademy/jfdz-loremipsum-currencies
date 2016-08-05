@@ -36,6 +36,15 @@ $(document).ready(function() {
         }
     });
 
+
+    // ============ responsive scroll menu ================
+    var $header = $('.header');
+    var $headerHeight = $header.height();
+    $(window).on('scroll', function() {
+        var headerMin = ( $(document).scrollTop() > $headerHeight ) ? $header.addClass('header-min') : $header.removeClass('header-min');
+        return headerMin;
+    });
+
     // ================== css font size =================
     var linkFontSize = document.querySelectorAll('.btn-font-size');
     var linkFontSizeLength = linkFontSize.length;
