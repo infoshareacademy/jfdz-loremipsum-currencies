@@ -15,11 +15,11 @@
     <nav class="main-navigation">
         <a class="button close-main-navigation" href="#">&times;</a>
         <ul>
-            <li><a href="#home">START</a></li>
-            <li><a href="#function">FUNKCJE</a></li>
-            <li><a href="#contact">KONTAKT</a></li>
-            <li><a href="#about-us">O NAS</a></li>
-            <li><a href="#maps">MAPA STRONY</a></li>
+            <li><a href="#home" data-lang="navigation1">START</a></li>
+            <li><a href="#function" data-lang="navigation2">FUNKCJE</a></li>
+            <li><a href="#contact" data-lang="navigation3">KONTAKT</a></li>
+            <li><a href="#about-us" data-lang="navigation4">O NAS</a></li>
+            <li><a href="#maps" data-lang="navigation5">MAPA STRONY</a></li>
         </ul>
     </nav><!-- /navigation -->
 
@@ -30,6 +30,10 @@
             <span></span>
             <span></span>
         </button>
+        <div style="margin-left: 150px; font-size: 20px;">
+        <a href="#" class="btn-change-lang" data-language="pl">pl</a>
+        <a href="#" class="btn-change-lang" data-language="en">en</a>
+        </div>
         <h1>
             <img src="images/logo.svg" alt="Monitor kursów walut">
             Monitor Kursów Walut
@@ -41,7 +45,7 @@
                 <button type="button" class="btn-font-size large">A</button>
             </li>
             <li class="contrast">
-                <button type="button" class="btn-change-contrast">Zmień kontrast</button>
+                <button type="button" class="btn-change-contrast" data-lang="btnContrast">Zmień kontrast</button>
             </li>
         </ul>
     </header><!-- /header -->
@@ -166,6 +170,7 @@
     <button type="button" class="btn-back-to-top"><i class="fa fa-angle-up" aria-hidden="true"></i></button>
 
     <script src="js/jquery-2.2.4.min.js"></script>
+    <script src="js/lang.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>

@@ -70,6 +70,18 @@ $(document).ready(function() {
     });// == /button back to top
 
 
+    // ============== change language =============
+    $('.btn-change-lang').on('click', function(ev) {
+        ev.preventDefault();
+        var $changeLang = $(this).data('language');
+        console.log('a');
+
+        $('[data-lang]').each(function(index, el) {
+            var $textLang = $(el).data('lang');
+            $(el).text( lang [ $changeLang ][ $textLang ] );
+        });
+    });// == /change language
+
 
     // ================== css font size =================
     var linkFontSize = document.querySelectorAll('.btn-font-size');
