@@ -71,17 +71,22 @@ $(document).ready(function() {
 
 
     // ============== change language =============
+    function changeLanguage() {
+        $('[data-lang]').each(function(index, el) {
+            var $textLang = $(el).data('lang');
+            $(el).text( lang [ localStorage.getItem('pageLang') ][ $textLang ] );
+        });
+    }
+
+    changeLanguage();
+
     $('.btn-change-lang').on('click', function(ev) {
         ev.preventDefault();
         var $changeLang = $(this).data('language');
-        console.log('a');
-
-        $('[data-lang]').each(function(index, el) {
-            var $textLang = $(el).data('lang');
-            $(el).text( lang [ $changeLang ][ $textLang ] );
-        });
+        localStorage.setItem('pageLang', $changeLang);
+        changeLanguage();
     });// == /change language
-
+    
 
     // ================== css font size =================
     var linkFontSize = document.querySelectorAll('.btn-font-size');
