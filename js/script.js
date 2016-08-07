@@ -74,7 +74,7 @@ $(document).ready(function() {
     function changeLanguage() {
         $('[data-lang]').each(function(index, el) {
             var $textLang = $(el).data('lang');
-            $(el).text( lang [ localStorage.getItem('pageLang') ][ $textLang ] );
+            $(el).text( lang [ localStorage.getItem('pageLang') || 'pl' ][ $textLang ] );
         });
     }
 
@@ -86,7 +86,7 @@ $(document).ready(function() {
         localStorage.setItem('pageLang', $changeLang);
         changeLanguage();
     });// == /change language
-    
+
 
     // ================== css font size =================
     var linkFontSize = document.querySelectorAll('.btn-font-size');
