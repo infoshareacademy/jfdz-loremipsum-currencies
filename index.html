@@ -15,11 +15,11 @@
     <nav class="main-navigation">
         <a class="button close-main-navigation" href="#">&times;</a>
         <ul>
-            <li><a href="#home">START</a></li>
-            <li><a href="#function">FUNKCJE</a></li>
-            <li><a href="#contact">KONTAKT</a></li>
-            <li><a href="#about-us">O NAS</a></li>
-            <li><a href="#maps">MAPA STRONY</a></li>
+            <li><a href="#home" data-lang="navigation_1">Start</a></li>
+            <li><a href="#function" data-lang="navigation_2">Funkcje</a></li>
+            <li><a href="#contact" data-lang="navigation_3">Kontakt</a></li>
+            <li><a href="#about-us" data-lang="navigation_4">O nas</a></li>
+            <li><a href="#maps" data-lang="navigation_5">Mapa strony</a></li>
         </ul>
     </nav><!-- /navigation -->
 
@@ -30,6 +30,10 @@
             <span></span>
             <span></span>
         </button>
+        <div style="margin-left: 150px; font-size: 20px;">
+        <a href="#" class="btn-change-lang" data-language="pl">pl</a>
+        <a href="#" class="btn-change-lang" data-language="en">en</a>
+        </div>
         <h1>
             <img src="images/logo.svg" alt="Monitor kursów walut">
             Monitor Kursów Walut
@@ -41,7 +45,7 @@
                 <button type="button" class="btn-font-size large">A</button>
             </li>
             <li class="contrast">
-                <button type="button" class="btn-change-contrast">Zmień kontrast</button>
+                <button type="button" class="btn-change-contrast" data-lang="btnContrast">Zmień kontrast</button>
             </li>
         </ul>
     </header><!-- /header -->
@@ -103,24 +107,30 @@
 
         <!-- contact -->
         <section id="contact">
-            <h2>Kontakt do nas!</h2>
+            <h2 data-lang="form_heading">Kontakt do nas!</h2>
 
             <form method="get">
                 <ul>
                     <li>
+<<<<<<< HEAD
+                        <label data-lang="form_email">Podaj adres e-mail:</label>:<br>
+                        <input type="email" name="Adres e-mail:">
+=======
                         Podaj adres e-mail:<br>
                         <input type="email" name="Adres e-mail:" required>
+>>>>>>> master
                     </li>
-                    <li>Twoje imię:<br>
+                    <li>
+                        <label data-lang="form_name">Twoje imię:</label><br>
                         <input type="text" id="fname" name="fname" required>
                     </li>
                     <li>
-                        Wiadomość:
+                        <label data-lang="form_msg">Wiadomość:</label>
                         <textarea></textarea>
                     </li>
                     <li>
                         <div>
-                            <input type="submit" value="Wyślij">
+                            <button data-lang="form_btn">Wyślij"</button>
                         </div>
                     </li>
                 </ul>
@@ -130,23 +140,23 @@
 
         <!-- about us -->
         <section class="text-page text-other-page" id="about-us">
-            <h2 id="onas">To my!</h2>
+            <h2 id="onas" data-lang="about_heading">To my!</h2>
             <div class="onas">
                 <article class="onas-art">
                     <img src="images/Mateusz.jpg" a;t="Mateusz" class="onas-img">
-                    <h5>To jest Mateusz!</h5>
+                    <h5><span data-lang="it_is">To jest</span> Mateusz!</h5>
                 </article>
                 <article class="onas-art">
                     <img src="images/Marcin.jpg" alt="Marcin" class="onas-img"><br>
-                    <h5>To jest Marcin!</h5>
+                    <h5><span data-lang="it_is">To jest</span> Marcin!</h5>
                 </article>
                 <article class="onas-art">
                     <img src="images/index.jpeg" alt="Iza" class="onas-img"><br>
-                    <h5>To jest Iza!</h5>
+                    <h5><span data-lang="it_is">To jest</span> Iza!</h5>
                 </article>
                 <article class="onas-art">
                     <img src="images/ja.jpeg" alt="Tomek" class="onas-img"><br>
-                    <h5>To jest Tomek!</h5>
+                    <h5><span data-lang="it_is">To jest</span> Tomek!</h5>
                 </article>
             </div>
         </section> <!-- /about us -->
@@ -166,6 +176,7 @@
     <button type="button" class="btn-back-to-top"><i class="fa fa-angle-up" aria-hidden="true"></i></button>
 
     <script src="js/jquery-2.2.4.min.js"></script>
+    <script src="js/lang.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
