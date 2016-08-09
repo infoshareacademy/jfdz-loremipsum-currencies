@@ -17,6 +17,11 @@
   color: #000000;
   border: 1px solid #000000; }
 
+.language-buttons a.active, .language-buttons a:hover {
+  background-color: #FFFF00;
+  color: #000000;
+  border: 1px solid #FFFF00; }
+
 nav {
   background-color: rgba(0, 0, 0, 0.8); }
   nav .button:hover {

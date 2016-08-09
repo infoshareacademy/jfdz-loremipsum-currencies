@@ -2367,6 +2367,35 @@ textarea:focus {
 .header-min .header__btn-nav {
   height: 60px; }
 
+/* ======= button change language ======= */
+.language-buttons {
+  position: absolute;
+  margin-top: 24px;
+  left: 12rem;
+  transition: all 1s; }
+  .language-buttons a {
+    display: inline-block;
+    font-size: 1.6rem;
+    width: 45px;
+    height: 45px;
+    text-transform: uppercase;
+    border: 1px solid #FFFFFF;
+    text-align: center;
+    line-height: 45px;
+    margin-left: 1rem;
+    transition: all 1s; }
+    .language-buttons a:hover, .language-buttons a.active {
+      background-color: #FFFFFF;
+      color: #37b8eb; }
+
+.header-min .language-buttons {
+  margin-top: 12px; }
+  .header-min .language-buttons a {
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    font-size: 1.4rem; }
+
 /* ========== banner ========== */
 .banner {
   position: relative;

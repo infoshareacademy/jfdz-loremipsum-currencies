@@ -30,3 +30,17 @@
     }
   }
 }
+
+.language-buttons {
+
+  a {
+
+
+    &.active,
+    &:hover {
+      background-color: $yellow-color;
+      color: $black-color;
+      border: 1px solid $yellow-color;
+    }
+  }
+}

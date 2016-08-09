@@ -164,3 +164,43 @@
   }
 }
 
+/* ======= button change language ======= */
+.language-buttons {
+  position: absolute;
+  margin-top: 24px;
+  left: 12rem;
+  transition: all 1s;
+
+  a {
+    display: inline-block;
+    font-size: 1.6rem;
+    width: 45px;
+    height: 45px;
+    text-transform: uppercase;
+    border: 1px solid $white-color;
+    text-align: center;
+    line-height: 45px;
+    margin-left: 1rem;
+    transition: all 1s;
+
+    &:hover,
+    &.active {
+      background-color: $white-color;
+      color: $blue-color;
+    }
+  }
+}
+
+.header-min {
+
+  .language-buttons {
+    margin-top: 12px;
+
+    a {
+      width: 35px;
+      height: 35px;
+      line-height: 35px;
+      font-size: 1.4rem;
+    }
+  }
+}

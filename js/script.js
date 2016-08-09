@@ -76,12 +76,25 @@ $(document).ready(function() {
             var $textLang = $(el).data('lang');
             $(el).text( lang [ localStorage.getItem('pageLang') || 'pl' ][ $textLang ] );
         });
+
+        var activeButton = localStorage.getItem('pageLang');
+        $('.btn-change-lang').removeClass('active');
+        if(activeButton) {
+            $('.btn-change-lang[data-language=' + activeButton + ']').addClass('active');
+        } else {
+            $('.btn-change-lang[data-language=pl]').addClass('active');
+        }
     }
 
     changeLanguage();
 
     $('.btn-change-lang').on('click', function(ev) {
         ev.preventDefault();
+        var $button = $(this);
+
+        $('.btn-change-lang').removeClass('active');
+        $button.addClass('active');
+
         var $changeLang = $(this).data('language');
         localStorage.setItem('pageLang', $changeLang);
         changeLanguage();
