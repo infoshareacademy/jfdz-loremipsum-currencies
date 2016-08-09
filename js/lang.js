@@ -1,6 +1,8 @@
 var lang = {
 
     pl: {
+        page_title: 'Monitor Kursów Walut',
+
         navigation_1: 'Start',
         navigation_2: 'Funkcje',
         navigation_3: 'Kontakt',
@@ -20,6 +22,8 @@ var lang = {
     },
 
     en: {
+        page_title: 'Currency monitor',
+
         navigation_1: 'Home',
         navigation_2: 'Function',
         navigation_3: 'Contact',
