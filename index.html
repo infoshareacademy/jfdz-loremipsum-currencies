@@ -15,11 +15,11 @@
     <nav class="main-navigation">
         <a class="button close-main-navigation" href="#">&times;</a>
         <ul>
-            <li><a href="#home" data-lang="navigation1">START</a></li>
-            <li><a href="#function" data-lang="navigation2">FUNKCJE</a></li>
-            <li><a href="#contact" data-lang="navigation3">KONTAKT</a></li>
-            <li><a href="#about-us" data-lang="navigation4">O NAS</a></li>
-            <li><a href="#maps" data-lang="navigation5">MAPA STRONY</a></li>
+            <li><a href="#home" data-lang="navigation_1">Start</a></li>
+            <li><a href="#function" data-lang="navigation_2">Funkcje</a></li>
+            <li><a href="#contact" data-lang="navigation_3">Kontakt</a></li>
+            <li><a href="#about-us" data-lang="navigation_4">O nas</a></li>
+            <li><a href="#maps" data-lang="navigation_5">Mapa strony</a></li>
         </ul>
     </nav><!-- /navigation -->
 
@@ -107,24 +107,25 @@
 
         <!-- contact -->
         <section id="contact">
-            <h2>Kontakt do nas!</h2>
+            <h2 data-lang="form_heading">Kontakt do nas!</h2>
 
             <form method="get">
                 <ul>
                     <li>
-                        Podaj adres e-mail:<br>
+                        <label data-lang="form_email">Podaj adres e-mail:</label>:<br>
                         <input type="email" name="Adres e-mail:">
                     </li>
-                    <li>Twoje imię:<br>
+                    <li>
+                        <label data-lang="form_name">Twoje imię:</label><br>
                         <input type="text" id="fname" name="fname" required>
                     </li>
                     <li>
-                        Wiadomość:
+                        <label data-lang="form_msg">Wiadomość:</label>
                         <textarea></textarea>
                     </li>
                     <li>
                         <div>
-                            <input type="submit" value="Wyślij">
+                            <button data-lang="form_btn">Wyślij"</button>
                         </div>
                     </li>
                 </ul>
@@ -134,23 +135,23 @@
 
         <!-- about us -->
         <section class="text-page text-other-page" id="about-us">
-            <h2 id="onas">To my!</h2>
+            <h2 id="onas" data-lang="about_heading">To my!</h2>
             <div class="onas">
                 <article class="onas-art">
                     <img src="images/Mateusz.jpg" a;t="Mateusz" class="onas-img">
-                    <h5>To jest Mateusz!</h5>
+                    <h5><span data-lang="it_is">To jest</span> Mateusz!</h5>
                 </article>
                 <article class="onas-art">
                     <img src="images/Marcin.jpg" alt="Marcin" class="onas-img"><br>
-                    <h5>To jest Marcin!</h5>
+                    <h5><span data-lang="it_is">To jest</span> Marcin!</h5>
                 </article>
                 <article class="onas-art">
                     <img src="images/index.jpeg" alt="Iza" class="onas-img"><br>
-                    <h5>To jest Iza!</h5>
+                    <h5><span data-lang="it_is">To jest</span> Iza!</h5>
                 </article>
                 <article class="onas-art">
                     <img src="images/ja.jpeg" alt="Tomek" class="onas-img"><br>
-                    <h5>To jest Tomek!</h5>
+                    <h5><span data-lang="it_is">To jest</span> Tomek!</h5>
                 </article>
             </div>
         </section> <!-- /about us -->
