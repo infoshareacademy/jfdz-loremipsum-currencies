@@ -33,6 +33,15 @@ footer {
     color: #FFFFFF;
     font-size: 1.4rem; }
 
+.btn-back-to-top {
+  background-color: #000000;
+  color: #FFFF00;
+  border: 2px solid #FFFF00; }
+  .btn-back-to-top:hover {
+    background-color: #FFFF00;
+    color: #000000;
+    border: 2px solid #000000; }
+
 body {
   font-size: 12px; }
 

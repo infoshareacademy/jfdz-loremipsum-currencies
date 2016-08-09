@@ -8,3 +8,16 @@ footer {
     font-size: 1.4rem;
   }
 }
+
+.btn-back-to-top {
+  background-color: $black-color;
+  color: $yellow-color;
+  border: 2px solid $yellow-color;
+
+  &:hover {
+    background-color: $yellow-color;
+    color: $black-color;
+    border: 2px solid $black-color;
+  }
+}
+
