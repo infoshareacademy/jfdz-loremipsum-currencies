@@ -2348,7 +2348,7 @@ textarea:focus {
 /* ========== header - btn menu ========== */
 .header__btn-nav {
   position: absolute;
-  width: 112px;
+  width: 11.2rem;
   height: 100px;
   background-color: transparent;
   border: 0;
@@ -2358,7 +2358,7 @@ textarea:focus {
   .header__btn-nav:hover {
     background-color: #1473b4; }
   .header__btn-nav span {
-    width: 60px;
+    width: 6rem;
     height: 4px;
     display: block;
     margin: 5px auto 10px;
