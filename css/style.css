@@ -2404,7 +2404,8 @@ textarea:focus {
   height: 100vh;
   background-size: cover;
   background-position: center bottom;
-  background-attachment: fixed; }
+  background-attachment: fixed;
+  transition: 2s ease; }
   .banner h2 {
     position: absolute;
     left: 0;
