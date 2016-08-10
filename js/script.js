@@ -127,6 +127,25 @@ $(document).ready(function() {
         linkFontSize[i].addEventListener('click', changeFontSize);
     }
 
+
+    // ================== animate slider =================
+    var imgArr = ['slide_02', 'slide_03', 'slide_01'];
+    var $banner = $('.banner');
+
+    function animateImage() {
+        var getImage = Math.floor(Math.random() * imgArr.length);
+        $banner.css({
+            'opacity': "0",
+            'background-image': 'url("images/' + imgArr[getImage] + '.jpg")'
+        }).animate({
+            opacity: "1"
+        });
+        setTimeout(animateImage, 6000);
+    }
+
+   animateImage();
+    // == animate slider
+
 });
 
 
