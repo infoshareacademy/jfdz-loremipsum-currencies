@@ -129,7 +129,7 @@ $(document).ready(function() {
 
 
     // ================== animate slider =================
-    var imgArr = ['slide_02', 'slide_03', 'slide_01'];
+    var imgArr = ['slide_01', 'slide_03', 'slide_02'];
     var $banner = $('.banner');
 
     function animateImage() {
@@ -140,7 +140,7 @@ $(document).ready(function() {
         }).animate({
             opacity: "1"
         });
-        setTimeout(animateImage, 6000);
+        setTimeout(animateImage, 5000);
     }
 
    animateImage();
