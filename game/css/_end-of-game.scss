@@ -1,0 +1,54 @@
+.end-of-game {
+  max-width: 400px;
+  background-color: $heading-color;
+  font-family: $basic-font;
+
+  .heading {
+    color: $basic-color;
+    text-align: center;
+    border-bottom: 5px solid #5c3c0b;
+    padding: 1rem 0;
+    font-size: 2.6rem;
+  }
+
+  .result-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+
+    li {
+      font-size: 2.4rem;
+      padding: 0 6rem 0 4rem;
+      margin-bottom: 1rem;
+
+      span {
+        float: right;
+        font-weight: bold;
+      }
+    }
+  }
+
+  .btn-container {
+    text-align: center;
+  }
+
+  .play-again {
+    margin: 2rem 0;
+    background-color: $basic-color;
+    color: $heading-color;
+    border: 0;
+    cursor: pointer;
+    font-family: $basic-font;
+    text-align: center;
+    font-size: 2.4rem;
+    font-weight: bold;
+    padding: 1rem 2rem;
+    border: 2px solid transparent;
+
+    &:hover {
+      background-color: $heading-color;
+      color: $basic-color;
+      border-color: $basic-color;
+    }
+  }
+}

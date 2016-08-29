@@ -1,3 +1,48 @@
+html {
+  font-size: 10px; }
 
+body {
+  font-family: "Times New Roman", sans-serif;
+  font-size: 1.4rem; }
+
+.end-of-game {
+  max-width: 400px;
+  background-color: #FFC626;
+  font-family: "Times New Roman", sans-serif; }
+  .end-of-game .heading {
+    color: #5C3C0B;
+    text-align: center;
+    border-bottom: 5px solid #5c3c0b;
+    padding: 1rem 0;
+    font-size: 2.6rem; }
+  .end-of-game .result-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none; }
+    .end-of-game .result-list li {
+      font-size: 2.4rem;
+      padding: 0 6rem 0 4rem;
+      margin-bottom: 1rem; }
+      .end-of-game .result-list li span {
+        float: right;
+        font-weight: bold; }
+  .end-of-game .btn-container {
+    text-align: center; }
+  .end-of-game .play-again {
+    margin: 2rem 0;
+    background-color: #5C3C0B;
+    color: #FFC626;
+    border: 0;
+    cursor: pointer;
+    font-family: "Times New Roman", sans-serif;
+    text-align: center;
+    font-size: 2.4rem;
+    font-weight: bold;
+    padding: 1rem 2rem;
+    border: 2px solid transparent; }
+    .end-of-game .play-again:hover {
+      background-color: #FFC626;
+      color: #5C3C0B;
+      border-color: #5C3C0B; }
 
 /*# sourceMappingURL=style-game.css.map */
