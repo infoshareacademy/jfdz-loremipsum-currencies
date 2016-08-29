@@ -146,6 +146,21 @@ $(document).ready(function() {
    animateImage();
     // == animate slider
 
+
+    // ================== link go to section =================
+    $('.main-navigation').on('click', 'a', function(ev) {
+        ev.preventDefault();
+        var $link = $(this);
+        var href = $link.attr('href');
+        var position = $(href).offset().top - 80;
+
+        $('html, body').animate({
+            scrollTop: position
+        }, 800);
+
+        $('.main-navigation').removeClass('show');
+    });
+
 });
 
 
