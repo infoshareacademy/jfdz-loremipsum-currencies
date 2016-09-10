@@ -38,4 +38,7 @@
   height: calc(100% - 43px);
   background-color: rgba($text-color, .8);
   padding: 2rem;
+  position: absolute;
+  top: 43px;
+  left: 0;
 }
