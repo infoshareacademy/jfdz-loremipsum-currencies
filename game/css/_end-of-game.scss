@@ -2,6 +2,7 @@
   max-width: 400px;
   background-color: $heading-color;
   font-family: $basic-font;
+  margin: 15% auto 0;
 
   .heading {
     color: $basic-color;
@@ -27,4 +28,14 @@
       }
     }
   }
+}
+
+.end-container {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  height: calc(100% - 43px);
+  background-color: rgba($text-color, .8);
+  padding: 2rem;
 }

@@ -8,10 +8,13 @@
 <body>
 
     <div class="game-container">
+
+        <!-- GAME HEADER -->
         <header class="game-header">
             <h2>Digger Game</h2>
-        </header>
+        </header><!--/ GAME HEADER -->
 
+        <!-- GAME INSTRUCTION -->
         <section class="game-instruction">
             <div class="instruction-txt">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A facilis nihil nulla! Ab, accusantium, atque
@@ -28,26 +31,32 @@
                     temporibus ut veritatis?</p>
             </div>
             <div class="btn-container">
-                <button class="button-play">Play</button>
+                <button class="button-play play">Play</button>
             </div>
-        </section>
+        </section><!--/ GAME INSTRUCTION -->
+
+        <!-- END OF GAME -->
+        <div class="end-container">
+            <div class="end-of-game">
+                <h2 class="heading">Koniec gry :-)</h2>
+                <ul class="result-list">
+                    <li>
+                        Zebranych monet: <span>10</span>
+                    </li>
+                    <li>
+                        Punkty:
+                        <span>123</span>
+                    </li>
+                </ul>
+                <div class="btn-container">
+                    <button type="button" class="button-play play-again">Zagraj ponownie</button>
+                </div>
+            </div>
+        </div><!--/ END OF GAME -->
+
     </div>
 
-    <div class="end-of-game">
-        <h2 class="heading">Koniec gry :-)</h2>
-        <ul class="result-list">
-            <li>
-                Zebranych monet: <span>10</span>
-            </li>
-            <li>
-                Punkty:
-                <span>123</span>
-            </li>
-        </ul>
-        <div class="btn-container">
-            <button type="button" class="button-play play-again">Zagraj ponownie</button>
-        </div>
-    </div>
+
 
     <script src="js/jquery-3.1.0.min.js"></script>
     <script src="js/script-game.js"></script>
