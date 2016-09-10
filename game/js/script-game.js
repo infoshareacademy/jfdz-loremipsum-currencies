@@ -1,6 +1,7 @@
 $(document).ready(function() {
 
     var $board = $('.board');
+    var $endContainer = $('.end-container');
 
     /* ===== play game ===== */
     var $buttonPlay = $('.play'),
@@ -8,6 +9,21 @@ $(document).ready(function() {
 
     $buttonPlay.on('click', function() {
         $gameInstruction.fadeOut();
+        startResultGame();
+        startTimeGame();
+        timer();
+    });
+
+
+    /* ===== play again ===== */
+    var $playAgain = $('.play-again'),
+        $gameEndContainer = $('.end-container');
+
+    $playAgain.on('click', function() {
+        $gameEndContainer.fadeOut();
+        startResultGame();
+        startTimeGame();
+        timer();
     });
 
 
@@ -30,21 +46,56 @@ $(document).ready(function() {
 
     drawBoard(20, 20);
 
-
-    /* ===== play again ===== */
-    var $playAgain = $('.play-again'),
-        $gameEndContainer = $('.end-container');
-
-    $playAgain.on('click', function() {
-        $gameEndContainer.fadeOut();
-    });
-
-
     /* ===== result game ===== */
-    var  resultGame = 0;
-    $('.game-result .coins').text(resultGame);
+    var  resultGame;
+
+    $('.game-result .js-coins').text(resultGame);
+
+    function startResultGame() {
+        resultGame = 0;
+        $('.game-result .js-coins').text(resultGame);
+    }
+
 
     /* ===== time game ===== */
-    var timeGame = 180;
-    $('.game-result .time').text(timeGame);
+    var timeGame;
+
+    function startTimeGame() {
+        timeGame = 10;
+        return timeGame;
+    }
+
+    function changeTimeToMinutes() {
+        var allTime;
+
+        var minutes = Math.floor(timeGame / 60),
+            seconds = timeGame - minutes * 60;
+
+        var min = ((minutes < 10) ? "0" : "") + minutes,
+            sec = ((seconds < 10) ? "0" : "") + seconds;
+
+        allTime = min + ":" + sec;
+
+        return allTime;
+    }
+
+    function timer() {
+        $('.game-result .js-time').text( changeTimeToMinutes(timeGame) );
+        timeGame--;
+        if(timeGame >= 0) {
+            setTimeout(timer, 1000);
+        } else {
+            showResultEndGame();
+        }
+    }
+
+    /* ===== end game ===== */
+    function showResultEndGame() {
+        var time = timeGame >= 0 ? timeGame : '00:00';
+        $('.result-list .js-time').text(time);
+        $('.result-list .js-coins').text(resultGame);
+
+        $endContainer.delay(500).fadeIn();
+    }
+
 });

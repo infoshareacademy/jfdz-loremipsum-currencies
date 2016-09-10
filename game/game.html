@@ -45,8 +45,8 @@
         <!-- GAME BOARD -->
         <section class="game-board">
             <header class="game-result">
-                <p class="result-info info-coins">Liczba zebranych monet: <span class="coins"></span></p>
-                <p class="result-info info-time">Czas: <span class="time"></span></p>
+                <p class="result-info info-coins">Liczba zebranych monet: <span class="coins js-coins"></span></p>
+                <p class="result-info info-time">Czas: <span class="time js-time"></span></p>
             </header>
             <div class="board"></div>
         </section>
@@ -59,11 +59,11 @@
                 <h2 class="heading">Koniec gry :-)</h2>
                 <ul class="result-list">
                     <li>
-                        Zebranych monet: <span>10</span>
+                        Zebranych monet: <span class="js-coins"></span>
                     </li>
                     <li>
-                        Punkty:
-                        <span>123</span>
+                        Pozosało czasu:
+                        <span class="js-time"></span>
                     </li>
                 </ul>
                 <div class="btn-container">
@@ -76,6 +76,5 @@
 
     <script src="js/jquery-3.1.0.min.js"></script>
     <script src="js/script-game.js"></script>
-    <script src="js/licznik-czasu.js"></script>
 </body>
 </html>
