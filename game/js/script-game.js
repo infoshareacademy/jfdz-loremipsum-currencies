@@ -38,4 +38,13 @@ $(document).ready(function() {
     $playAgain.on('click', function() {
         $gameEndContainer.fadeOut();
     });
+
+
+    /* ===== result game ===== */
+    var  resultGame = 0;
+    $('.game-result .coins').text(resultGame);
+
+    /* ===== time game ===== */
+    var timeGame = 180;
+    $('.game-result .time').text(timeGame);
 });
