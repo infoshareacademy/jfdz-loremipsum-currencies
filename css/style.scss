@@ -72,3 +72,20 @@ html.large {
 @import "form";
 
 @import "navigation";
+
+.play-game {
+  text-align: center;
+  a {
+    display: inline-block;
+    text-transform: uppercase;
+    background-color: $blue-color;
+    padding: 2rem;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+
+    &:hover {
+      color: $white-color;
+      background-color: $blue-dark-color;
+    }
+  }
+}

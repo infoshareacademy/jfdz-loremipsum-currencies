@@ -2529,4 +2529,17 @@ nav {
           background-color: rgba(55, 184, 235, 0.8);
           color: #FFFFFF; }
 
+.play-game {
+  text-align: center; }
+  .play-game a {
+    display: inline-block;
+    text-transform: uppercase;
+    background-color: #37b8eb;
+    padding: 2rem;
+    font-size: 2rem;
+    margin-bottom: 3rem; }
+    .play-game a:hover {
+      color: #FFFFFF;
+      background-color: #1473b4; }
+
 /*# sourceMappingURL=style.css.map */
