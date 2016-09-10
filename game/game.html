@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,23 +8,74 @@
 </head>
 <body>
 
+    <div class="game-container">
 
-    <div class="end-of-game">
-        <h2 class="heading">Koniec gry :-)</h2>
-        <ul class="result-list">
-            <li>
-                Zebranych monet: <span>10</span>
-            </li>
-            <li>
-                Punkty:
-                <span>123</span>
-            </li>
-        </ul>
-        <div class="btn-container">
-            <button type="button" class="play-again">Zagraj ponownie</button>
-        </div>
+        <!-- GAME HEADER -->
+        <header class="game-header">
+            <h2>Digger Game</h2>
+        </header><!--/ GAME HEADER -->
+
+
+        <!-- GAME INSTRUCTION -->
+        <section class="game-instruction">
+            <div class="instruction-txt">
+                <p>To jest gra DIGGER.</p>
+
+                <p>Polega na zbieraniu przez koparkę monet rozrzuconych na planszy w jak najkrótszym czasie.<br>
+                    Po upływie 30 sekund czas się skończy a gra zostanie przerwana z wynikiem
+                    ile monet udało Ci się zdobyć.
+                </p>
+
+                <p>Jeżeli uda Ci się zebrać monety szybiciej niż w 30 sekund, "Brawo dla Ciebie", a Twój czas
+                zostanie wyświetlony.</p>
+
+                <p>Po planszy możesz poruszać się koparką za pomocą czterech strzałek, tj.
+                GÓRA, DÓŁ, LEWO, PRAWO.</p>
+
+                <p>Rozpocznij grę przyciskając przycisk PLAY.</p>
+
+                <p>Miłej zabawy...</p>
+            </div>
+            <div class="btn-container">
+                <button class="button-play play">Play</button>
+            </div>
+        </section><!--/ GAME INSTRUCTION -->
+
+
+        <!-- GAME BOARD -->
+        <section class="game-board">
+            <header class="game-result">
+
+            </header>
+            <div class="board">
+
+            </div>
+        </section>
+        <!--/ GAME BOARD -->
+
+
+        <!-- END OF GAME -->
+        <section class="end-container">
+            <div class="end-of-game">
+                <h2 class="heading">Koniec gry :-)</h2>
+                <ul class="result-list">
+                    <li>
+                        Zebranych monet: <span>10</span>
+                    </li>
+                    <li>
+                        Punkty:
+                        <span>123</span>
+                    </li>
+                </ul>
+                <div class="btn-container">
+                    <button type="button" class="button-play play-again">Zagraj ponownie</button>
+                </div>
+            </div>
+        </section><!--/ END OF GAME -->
+
     </div>
 
+    <script src="js/jquery-3.1.0.min.js"></script>
     <script src="js/script-game.js"></script>
 </body>
 </html>

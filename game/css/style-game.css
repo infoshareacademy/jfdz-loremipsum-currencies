@@ -5,10 +5,86 @@ body {
   font-family: "Times New Roman", sans-serif;
   font-size: 1.4rem; }
 
+.game-container {
+  width: 1160px;
+  height: 788px;
+  border: 1px solid #000;
+  position: relative; }
+
+.game-header h2 {
+  margin: 0;
+  padding: 1rem 0;
+  background-color: #FFC626;
+  text-transform: uppercase;
+  color: #262200;
+  text-align: center;
+  font-size: 2rem; }
+
+.btn-container {
+  text-align: center; }
+
+.button-play {
+  margin: 2rem 0;
+  background-color: #FFC626;
+  color: #5C3C0B;
+  border: 0;
+  cursor: pointer;
+  font-family: "Times New Roman", sans-serif;
+  text-align: center;
+  font-size: 2.4rem;
+  font-weight: bold;
+  padding: 1rem 2rem;
+  border: 2px solid transparent; }
+
+.play-again {
+  background-color: #5C3C0B;
+  color: #FFC626; }
+  .play-again:hover {
+    background-color: #FFC626;
+    color: #5C3C0B;
+    border-color: #5C3C0B; }
+
+.game-instruction {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  height: calc(100% - 43px);
+  background-color: rgba(38, 34, 0, 0.8);
+  padding: 4rem;
+  position: absolute;
+  top: 43px;
+  left: 0; }
+
+.instruction-txt {
+  background-color: #FFFFFF;
+  padding: 4rem; }
+  .instruction-txt p {
+    padding: 0;
+    margin: 0 0 1.5rem 0;
+    line-height: 1.5;
+    font-weight: bold;
+    font-size: 2.4rem; }
+
+.game-result {
+  width: 100%;
+  height: 6rem;
+  border-bottom: 5px solid #262200;
+  background: url(../images/g-background.png); }
+
+.board table {
+  border-collapse: collapse; }
+
+.bg-board {
+  background: url(../images/g-background.png);
+  width: 56px;
+  height: 32px; }
+
 .end-of-game {
   max-width: 400px;
   background-color: #FFC626;
-  font-family: "Times New Roman", sans-serif; }
+  font-family: "Times New Roman", sans-serif;
+  margin: 15% auto 0; }
   .end-of-game .heading {
     color: #5C3C0B;
     text-align: center;
@@ -26,23 +102,17 @@ body {
       .end-of-game .result-list li span {
         float: right;
         font-weight: bold; }
-  .end-of-game .btn-container {
-    text-align: center; }
-  .end-of-game .play-again {
-    margin: 2rem 0;
-    background-color: #5C3C0B;
-    color: #FFC626;
-    border: 0;
-    cursor: pointer;
-    font-family: "Times New Roman", sans-serif;
-    text-align: center;
-    font-size: 2.4rem;
-    font-weight: bold;
-    padding: 1rem 2rem;
-    border: 2px solid transparent; }
-    .end-of-game .play-again:hover {
-      background-color: #FFC626;
-      color: #5C3C0B;
-      border-color: #5C3C0B; }
+
+.end-container {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  height: calc(100% - 43px);
+  background-color: rgba(38, 34, 0, 0.8);
+  padding: 2rem;
+  position: absolute;
+  top: 43px;
+  left: 0; }
 
 /*# sourceMappingURL=style-game.css.map */

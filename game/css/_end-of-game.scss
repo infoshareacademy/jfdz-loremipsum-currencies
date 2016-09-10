@@ -2,6 +2,7 @@
   max-width: 400px;
   background-color: $heading-color;
   font-family: $basic-font;
+  margin: 15% auto 0;
 
   .heading {
     color: $basic-color;
@@ -27,28 +28,17 @@
       }
     }
   }
+}
 
-  .btn-container {
-    text-align: center;
-  }
-
-  .play-again {
-    margin: 2rem 0;
-    background-color: $basic-color;
-    color: $heading-color;
-    border: 0;
-    cursor: pointer;
-    font-family: $basic-font;
-    text-align: center;
-    font-size: 2.4rem;
-    font-weight: bold;
-    padding: 1rem 2rem;
-    border: 2px solid transparent;
-
-    &:hover {
-      background-color: $heading-color;
-      color: $basic-color;
-      border-color: $basic-color;
-    }
-  }
+.end-container {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  height: calc(100% - 43px);
+  background-color: rgba($text-color, .8);
+  padding: 2rem;
+  position: absolute;
+  top: 43px;
+  left: 0;
 }

@@ -1,0 +1,17 @@
+.game-result {
+  width: 100%;
+  height: 6rem;
+  border-bottom: 5px solid $text-color;
+  background: url(../images/g-background.png);
+}
+
+.board {
+  table {
+    border-collapse: collapse;
+  }
+}
+.bg-board {
+  background: url(../images/g-background.png);
+  width: 56px;
+  height: 32px;
+}

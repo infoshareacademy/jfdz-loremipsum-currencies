@@ -1,0 +1,49 @@
+.game-container {
+  width: 1160px;
+  height: 788px;
+  border: 1px solid #000;
+  position: relative;
+}
+
+
+.game-header {
+  h2 {
+    margin: 0;
+    padding: 1rem 0;
+    background-color: $heading-color;
+    text-transform: uppercase;
+    color: $text-color;
+    text-align: center;
+    font-size: 2rem;
+  }
+}
+
+
+.btn-container {
+  text-align: center;
+}
+
+.button-play {
+  margin: 2rem 0;
+  background-color: $heading-color;
+  color: $basic-color;
+  border: 0;
+  cursor: pointer;
+  font-family: $basic-font;
+  text-align: center;
+  font-size: 2.4rem;
+  font-weight: bold;
+  padding: 1rem 2rem;
+  border: 2px solid transparent;
+}
+
+.play-again {
+  background-color: $basic-color;
+  color: $heading-color;
+
+  &:hover {
+    background-color: $heading-color;
+    color: $basic-color;
+    border-color: $basic-color;
+  }
+}
