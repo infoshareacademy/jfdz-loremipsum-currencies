@@ -2528,6 +2528,9 @@ nav {
         nav ul > li a:hover {
           background-color: rgba(55, 184, 235, 0.8);
           color: #FFFFFF; }
+      nav ul > li.active a {
+        background-color: rgba(55, 184, 235, 0.8);
+        color: #FFFFFF; }
 
 .play-game {
   text-align: center; }

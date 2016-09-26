@@ -46,6 +46,12 @@ nav {
           color: $white-color;
         }
       }
+      &.active {
+        a {
+          background-color: rgba($blue-color, .8);
+          color: $white-color;
+        }
+      }
     }
   }
 }

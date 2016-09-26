@@ -29,6 +29,9 @@ nav {
   nav ul li a:hover {
     background-color: #FFFF00;
     color: #000000; }
+  nav ul li.active a {
+    background-color: #FFFF00;
+    color: #000000; }
 
 footer {
   background-color: #000000; }

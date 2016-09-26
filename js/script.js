@@ -154,12 +154,36 @@ $(document).ready(function() {
         var href = $link.attr('href');
         var position = $(href).offset().top - 80;
 
+        $('.main-navigation ul li').removeClass('active');
+        $link.parent().addClass('active');
+
         $('html, body').animate({
             scrollTop: position
         }, 800);
 
         $('.main-navigation').removeClass('show');
     });
+
+
+
+    $(document).on('scroll', scrollGoToSection);
+
+    function scrollGoToSection() {
+        var scrollTop = $(document).scrollTop();
+
+        $('.main-navigation ul li a').each(function () {
+            var sectionElement = $(this).attr('href');
+
+            var sectionPosition = $(sectionElement).offset().top;
+
+            console.log(sectionPosition, scrollTop);
+
+            if (sectionPosition <= scrollTop + 100) {
+                $('.main-navigation ul li a').parent().removeClass('active');
+                $(this).parent().addClass('active');
+            }
+        });
+    }
 
 });
 
