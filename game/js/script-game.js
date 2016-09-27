@@ -2,6 +2,7 @@ $(document).ready(function() {
 
     var $board = $('.board');
     var $endContainer = $('.end-container');
+    var $player = $('.player');
 
     /* ===== play game ===== */
     var $buttonPlay = $('.play'),
@@ -46,6 +47,71 @@ $(document).ready(function() {
 
     drawBoard(20, 20);
 
+    /* ===== add index ===== */
+    function addIndex(){
+        $('td').each(function(index){
+            $(this).append(index);
+        })
+    }
+    addIndex();
+
+    /* ===== add player ===== */
+    function addPlayer(){
+    $('table tr:first-child td:first-child').addClass('player');
+    }
+    addPlayer();
+
+    var coords = $player.index();
+    console.log(coords);
+
+    /* ===== move player ===== */
+    function movePlayer(){
+        window.addEventListener('keydown', function(event) {
+            switch (event.keyCode) {
+                case 37: // Left
+                    if(coords%20 === 0){ alert('nie mozesz isc bardziej w lewo')}
+                    else {
+                        coords -= 1;
+                        $('td.player').removeClass('player');
+                        $('td').eq(coords).addClass('player');
+                    }
+                    break;
+
+                case 38: // Up
+                    if(coords <= 9){ alert('nie mozesz isc juz do gory')}
+                    else {
+                        coords -= 20;
+                        $('td.player').removeClass('player');
+                        $('td').eq(coords).addClass('player');
+                    }
+                    break;
+
+                case 39: // Right
+                    if(coords%20 === 19){ alert('nie mozesz isc bardziej w prawo')}
+                    else {
+                        coords += 1;
+                        $('td.player').removeClass('player');
+                        $('td').eq(coords).addClass('player');
+                    }
+                    break;
+
+                case 40: // Down
+                    if(coords >= 380){ alert('nie mozesz zejsc glebiej')}
+                    else {
+                        coords += 20;
+                        $('td.player').removeClass('player');
+                        $('td').eq(coords).addClass('player');
+                    }
+                    break;
+            }
+        }, false);
+
+            // $('.game-board').keydown(function(e){
+            //     console.log(e);
+            // });
+    }
+    movePlayer();
+
     /* ===== result game ===== */
     var  resultGame;
 
@@ -61,7 +127,7 @@ $(document).ready(function() {
     var timeGame;
 
     function startTimeGame() {
-        timeGame = 10;
+        timeGame = 10000;
         return timeGame;
     }
 
