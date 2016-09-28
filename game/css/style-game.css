@@ -103,7 +103,11 @@ body {
 .bg-board {
   background: url(../images/g-background.png);
   width: 56px;
-  height: 32px; }
+  height: 32px;
+  color: transparent; }
+
+.player {
+  background: url("../images/g-digger.png"); }
 
 .end-of-game {
   max-width: 400px;
