@@ -26,6 +26,8 @@ $(document).ready(function() {
         point=0;
         coords=0;
         $gameEndContainer.fadeOut();
+        $('td').removeClass('tunnel').addClass('bg-board');
+
         startResultGame();
         startTimeGame();
         timer();
@@ -83,7 +85,7 @@ $(document).ready(function() {
     /* ===== add player ===== */
     function addPlayer(){
         $('td.player').removeClass('player');
-        $('table tr:first-child td:first-child').addClass('player');
+        $('table tr:first-child td:first-child').addClass('player', 'tunnel');
     }
     addPlayer();
 
@@ -98,6 +100,8 @@ $(document).ready(function() {
                     else {
                         coords -= 1;
                         $('td.player').removeClass('player');
+                        $('td').eq(coords).removeClass('bg-board');
+                        $('td').eq(coords).addClass('tunnel');
                         $('td').eq(coords).addClass('player');
                     }
                     break;
@@ -107,6 +111,8 @@ $(document).ready(function() {
                     else {
                         coords -= 20;
                         $('td.player').removeClass('player');
+                        $('td').eq(coords).removeClass('bg-board');
+                        $('td').eq(coords).addClass('tunnel');
                         $('td').eq(coords).addClass('player');
                     }
                     break;
@@ -116,6 +122,8 @@ $(document).ready(function() {
                     else {
                         coords += 1;
                         $('td.player').removeClass('player');
+                        $('td').eq(coords).removeClass('bg-board');
+                        $('td').eq(coords).addClass('tunnel');
                         $('td').eq(coords).addClass('player');
                     }
                     break;
@@ -125,6 +133,8 @@ $(document).ready(function() {
                     else {
                         coords += 20;
                         $('td.player').removeClass('player');
+                        $('td').eq(coords).removeClass('bg-board');
+                        $('td').eq(coords).addClass('tunnel');
                         $('td').eq(coords).addClass('player');
                     }
                     break;
@@ -165,7 +175,7 @@ addPoint();
     var timeGame;
 
     function startTimeGame() {
-        timeGame = 15;
+        timeGame = 10;
         return timeGame;
     }
 

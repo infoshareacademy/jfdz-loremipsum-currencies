@@ -15,7 +15,7 @@ body {
 .game-header h2 {
   margin: 0;
   padding: 1rem 0;
-  background-color: #FFC626;
+  background-color: #ffc626;
   text-transform: uppercase;
   color: #262200;
   text-align: center;
@@ -26,8 +26,8 @@ body {
 
 .button-play {
   margin: 2rem 0;
-  background-color: #FFC626;
-  color: #5C3C0B;
+  background-color: #ffc626;
+  color: #5c3c0b;
   border: 0;
   cursor: pointer;
   font-family: "Times New Roman", sans-serif;
@@ -38,12 +38,12 @@ body {
   border: 2px solid transparent; }
 
 .play-again {
-  background-color: #5C3C0B;
-  color: #FFC626; }
+  background-color: #5c3c0b;
+  color: #ffc626; }
   .play-again:hover {
-    background-color: #FFC626;
-    color: #5C3C0B;
-    border-color: #5C3C0B; }
+    background-color: #ffc626;
+    color: #5c3c0b;
+    border-color: #5c3c0b; }
 
 .game-instruction {
   -webkit-box-sizing: border-box;
@@ -58,7 +58,7 @@ body {
   left: 0; }
 
 .instruction-txt {
-  background-color: #FFFFFF;
+  background-color: white;
   padding: 4rem; }
   .instruction-txt p {
     padding: 0;
@@ -78,7 +78,7 @@ body {
     clear: both; }
   .game-result .result-info {
     margin: 0;
-    color: #FFFFFF;
+    color: white;
     font-size: 2.6rem;
     font-weight: bold;
     padding: 1.5rem 3rem; }
@@ -109,16 +109,20 @@ body {
 .coin {
   background: url("../images/g-coin.png"); }
 
+.tunnel {
+  background: url("../images/g-tunnel.png");
+  color: transparent; }
+
 .player {
   background: url("../images/g-digger.png"); }
 
 .end-of-game {
   max-width: 400px;
-  background-color: #FFC626;
+  background-color: #ffc626;
   font-family: "Times New Roman", sans-serif;
   margin: 15% auto 0; }
   .end-of-game .heading {
-    color: #5C3C0B;
+    color: #5c3c0b;
     text-align: center;
     border-bottom: 5px solid #5c3c0b;
     padding: 1rem 0;
@@ -146,5 +150,3 @@ body {
   position: absolute;
   top: 43px;
   left: 0; }
-
-/*# sourceMappingURL=style-game.css.map */
