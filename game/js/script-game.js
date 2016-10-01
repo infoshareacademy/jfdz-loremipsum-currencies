@@ -3,6 +3,8 @@ $(document).ready(function() {
     var $board = $('.board');
     var $endContainer = $('.end-container');
     var $player = $('.player');
+    var point = 0;
+    var coords = $player.index();
 
     /* ===== play game ===== */
     var $buttonPlay = $('.play'),
@@ -21,10 +23,14 @@ $(document).ready(function() {
         $gameEndContainer = $('.end-container');
 
     $playAgain.on('click', function() {
+        point=0;
+        coords=0;
         $gameEndContainer.fadeOut();
         startResultGame();
         startTimeGame();
         timer();
+        giveCoins();
+        addPlayer();
     });
 
 
@@ -60,7 +66,7 @@ $(document).ready(function() {
     var duplicate;
     function giveCoins(){
         var z=0;
-        for(var i=0; i<16; i++){
+        for(var i=0; i<15; i++){
             coin = Math.floor((Math.random()*400)+1);
             duplicate = $('td').eq(coin);
             //console.log(duplicate.index());
@@ -76,11 +82,12 @@ $(document).ready(function() {
 
     /* ===== add player ===== */
     function addPlayer(){
-    $('table tr:first-child td:first-child').addClass('player');
+        $('td.player').removeClass('player');
+        $('table tr:first-child td:first-child').addClass('player');
     }
     addPlayer();
 
-    var coords = $player.index();
+
 
     /* ===== move player ===== */
     function movePlayer(){
@@ -128,7 +135,7 @@ $(document).ready(function() {
 
 
     /* ===== add point ===== */
-    var point = 0;
+
     function addPoint(){
         window.addEventListener('keydown', function() {
            if ($('td.player').hasClass('coin')) {
@@ -136,7 +143,6 @@ $(document).ready(function() {
                $('td.player').removeClass('coin');
            }
         })
-        console.log(point);
 
     }
 addPoint();
