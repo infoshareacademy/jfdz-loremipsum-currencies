@@ -55,6 +55,25 @@ $(document).ready(function() {
     }
     addIndex();
 
+    /* ===== give coins ===== */
+    var coin;
+    var duplicate;
+    function giveCoins(){
+        var z=0;
+        for(var i=0; i<16; i++){
+            coin = Math.floor((Math.random()*400)+1);
+            duplicate = $('td').eq(coin);
+            //console.log(duplicate.index());
+            if(duplicate.index() === coin){
+                z++
+            }
+            duplicate.addClass('coin');
+        }
+        console.log(z);
+    }
+
+    giveCoins();
+
     /* ===== add player ===== */
     function addPlayer(){
     $('table tr:first-child td:first-child').addClass('player');
@@ -62,7 +81,6 @@ $(document).ready(function() {
     addPlayer();
 
     var coords = $player.index();
-    console.log(coords);
 
     /* ===== move player ===== */
     function movePlayer(){
@@ -105,12 +123,23 @@ $(document).ready(function() {
                     break;
             }
         }, false);
-
-            // $('.game-board').keydown(function(e){
-            //     console.log(e);
-            // });
     }
     movePlayer();
+
+
+    /* ===== add point ===== */
+    var point = 0;
+    function addPoint(){
+        window.addEventListener('keydown', function() {
+           if ($('td.player').hasClass('coin')) {
+               point ++;
+               $('td.player').removeClass('coin');
+           }
+        })
+        console.log(point);
+
+    }
+addPoint();
 
     /* ===== result game ===== */
     var  resultGame;
@@ -118,8 +147,11 @@ $(document).ready(function() {
     $('.game-result .js-coins').text(resultGame);
 
     function startResultGame() {
-        resultGame = 0;
-        $('.game-result .js-coins').text(resultGame);
+        window.addEventListener('keydown', function() {
+            resultGame = point;
+            $('.game-result .js-coins').text(resultGame);
+        })
+
     }
 
 
@@ -127,7 +159,7 @@ $(document).ready(function() {
     var timeGame;
 
     function startTimeGame() {
-        timeGame = 10000;
+        timeGame = 15;
         return timeGame;
     }
 
